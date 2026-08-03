@@ -1,0 +1,203 @@
+/*======================================
+    POPUP
+======================================*/
+
+.popup-overlay{
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(0,0,0,.65);
+
+    backdrop-filter:blur(8px);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:99999;
+
+    animation:fadeIn .35s ease;
+
+}
+
+
+.popup{
+
+    width:min(90%,480px);
+
+    background:#222;
+
+    border:1px solid rgba(130,88,251,.25);
+
+    border-radius:24px;
+
+    padding:35px;
+
+    text-align:center;
+
+    box-shadow:
+
+        0 25px 60px rgba(0,0,0,.45);
+
+    animation:popup .35s ease;
+
+}
+
+
+.popup-icon{
+
+    width:75px;
+
+    height:75px;
+
+    margin:auto;
+
+    margin-bottom:18px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:34px;
+
+    background:linear-gradient(
+        135deg,
+        #8258FB,
+        #BB65FF
+    );
+
+}
+
+
+.popup h2{
+
+    color:#fff;
+
+    margin-bottom:15px;
+
+    font-size:28px;
+
+}
+
+
+.popup p{
+
+    color:#cfcfcf;
+
+    line-height:1.8;
+
+    margin-bottom:30px;
+
+}
+
+
+.popup button{
+
+    border:none;
+
+    cursor:pointer;
+
+    padding:15px 38px;
+
+    border-radius:50px;
+
+    color:#fff;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    background:linear-gradient(
+        135deg,
+        #8258FB,
+        #BB65FF
+    );
+
+    transition:.3s;
+
+}
+
+
+.popup button:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:
+
+        0 10px 25px rgba(130,88,251,.35);
+
+}
+
+
+/*======================================
+    HIDE POPUP
+======================================*/
+
+.popup-overlay.hide{
+
+    animation:fadeOut .3s forwards;
+
+}
+
+
+/*======================================
+    ANIMATION
+======================================*/
+
+@keyframes popup{
+
+    from{
+
+        opacity:0;
+
+        transform:scale(.8);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:scale(1);
+
+    }
+
+}
+
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+
+    }
+
+    to{
+
+        opacity:1;
+
+    }
+
+}
+
+
+@keyframes fadeOut{
+
+    to{
+
+        opacity:0;
+
+        visibility:hidden;
+
+    }
+
+}

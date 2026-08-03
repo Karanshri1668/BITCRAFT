@@ -1,0 +1,305 @@
+/*======================================
+RESPONSIVE — EVENTS SECTION
+======================================*/
+@media(max-width:860px){
+
+    .events-section{
+        padding:100px 6%;
+    }
+
+    .section-title{
+        margin-bottom:60px;
+    }
+
+    .section-title h2{
+        font-size:3.2rem;
+    }
+
+    .events-grid{
+        grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+        gap:25px;
+    }
+
+    .event-card{
+        padding:28px;
+    }
+
+    .event-card h3{
+        font-size:1.6rem;
+    }
+}
+
+@media(max-width:768px){
+
+    .events-grid{
+        grid-template-columns:1fr;
+    }
+
+    .event-card{
+        animation:none; /* stop the floating bob so cards don't drift while scrolling on mobile */
+    }
+}
+
+@media(max-width:500px){
+
+    .events-section{
+        padding:80px 20px;
+    }
+
+    .section-title h2{
+        font-size:2.4rem;
+        letter-spacing:1px;
+    }
+
+    .section-title span{
+        font-size:.8rem;
+        letter-spacing:3px;
+    }
+
+    .section-title p{
+        font-size:14px;
+    }
+
+    .event-card{
+        padding:24px 22px;
+        border-radius:18px;
+    }
+
+    .event-icon{
+        font-size:38px;
+        margin-bottom:18px;
+    }
+
+    .event-card h3{
+        font-size:1.4rem;
+    }
+
+    .event-card p{
+        font-size:14px;
+        line-height:1.6;
+    }
+
+    .event-card span{
+        margin-top:18px;
+        font-size:13px;
+    }
+
+    .event-card a{
+        margin-top:18px;
+        font-size:13px;
+    }
+
+    .day-tag{
+        font-size:.65rem;
+        padding:6px 12px;
+        right:16px;
+        top:16px;
+    }
+}
+
+@media(max-width:360px){
+
+    .section-title h2{
+        font-size:2rem;
+    }
+
+    .event-card{
+        padding:20px 18px;
+    }
+}
+
+/* Touch devices: hover glow needs a mouse, so give cards a static
+   active-state feedback instead of relying on :hover */
+@media(hover:none){
+
+    .card-glow{
+        display:none;
+    }
+
+    .event-card:active{
+        transform:scale(.98);
+        border-color:#BB65FF;
+    }
+}
+
+
+/*======================================
+RESPONSIVE — CONTACT / TEAM SECTION
+======================================*/
+@media(max-width:1024px){
+
+    .team-grid{
+        grid-template-columns:repeat(2,1fr);
+        gap:30px;
+    }
+
+    /* with only 2 columns the "featured" vertical offset looks broken,
+       so drop it and let all cards sit on the same baseline */
+    .featured{
+        transform:none;
+        grid-column:1 / -1;
+        max-width:360px;
+        margin:0 auto;
+    }
+
+    .featured:hover{
+        transform:translateY(-12px);
+    }
+}
+
+@media(max-width:860px){
+
+    .contact-section{
+        padding:100px 6%;
+    }
+
+    .section-heading{
+        margin-bottom:60px;
+    }
+
+    .section-heading h2{
+        font-size:2.8rem;
+    }
+
+    .section-heading p{
+        font-size:15px;
+        padding:0 10px;
+    }
+
+    /* orbit rings are decorative only — keep them from causing
+       horizontal scroll on narrower viewports */
+    .orbit-1{
+        width:420px;
+        height:420px;
+        top:-140px;
+        left:-140px;
+    }
+
+    .orbit-2{
+        width:320px;
+        height:320px;
+        right:-100px;
+        bottom:-100px;
+    }
+}
+
+@media(max-width:640px){
+
+     .team-grid{
+        grid-template-columns:1fr !important;
+        gap:25px;
+    }
+
+    .featured{
+        grid-column:auto;
+        max-width:100%;
+        margin:0;
+        transform:none;
+    }
+
+    .featured:hover{
+        transform:translateY(-12px);
+    }
+
+    .member-card{
+        padding:32px 24px;
+    }
+
+    .profile-ring{
+        width:110px;
+        height:110px;
+    }
+
+    .bottom-message h4{
+        font-size:1.5rem;
+    }
+
+    .bottom-message p{
+        font-size:14px;
+    }
+}
+
+@media(max-width:500px){
+
+    .contact-section{
+        padding:80px 20px;
+    }
+
+    .section-heading span{
+        font-size:.75rem;
+        letter-spacing:2px;
+    }
+
+    .section-heading h2{
+        font-size:2.2rem;
+    }
+
+    .member-card{
+        padding:28px 20px;
+        border-radius:20px;
+    }
+
+    .profile-ring{
+        width:95px;
+        height:95px;
+    }
+
+    .member-card h3{
+        font-size:1.1rem;
+    }
+
+    .member-card span{
+        font-size:.8rem;
+        padding:6px 14px;
+    }
+
+    .contact-info{
+        font-size:14px;
+    }
+
+    .whatsapp-btn{
+        padding:13px;
+        font-size:14px;
+    }
+
+    .bottom-message h4{
+        font-size:1.25rem;
+    }
+
+    .developer-credit p{
+        font-size:13px;
+    }
+
+    .orbit-1,
+    .orbit-2{
+        display:none; /* too small a viewport for these to read as intended */
+    }
+}
+
+@media(max-width:1024px){
+    .team-grid{
+        grid-template-columns:repeat(2,1fr);
+        gap:30px;
+    }
+    .featured{
+        transform:none;
+        grid-column:1 / -1;
+        max-width:300px;
+        margin:0 auto;
+    }
+    .featured:hover{
+        transform:translateY(-12px);
+    }
+}
+
+@media(max-width:640px){
+    .team-grid{
+        grid-template-columns:1fr !important;
+        gap:25px;
+    }
+}
+
+html, body{
+    overflow-x:hidden;
+    max-width:100%;
+}

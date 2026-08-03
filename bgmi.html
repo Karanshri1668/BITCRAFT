@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BGMI Registration | ORBIT TechFest</title>
+
+    <link rel="stylesheet" href="css/popuo.css">
+    <link rel="stylesheet" href="css/bgmi.css">
+
+</head>
+
+<body>
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <span class="badge">
+                ORBIT TECHFEST 2026
+            </span>
+
+            <h1>
+                BGMI & FREE FIRE Tournament Registration
+            </h1>
+
+            <p>
+                Register your squad and compete with the best teams on campus.
+            </p>
+
+            <!-- <div class="event-info">
+
+                <div class="info-box">
+                    <h3>Registration Fee</h3>
+                    <p>₹200 / Squad</p>
+                </div>
+
+                <div class="info-box">
+                    <h3>Squad Size</h3>
+                    <p>4 Players + 1 Optional Substitute</p>
+                </div>
+
+                <div class="info-box">
+                    <h3>Mode</h3>
+                    <p>Squad (TPP)</p>
+                </div>
+
+            </div> -->
+
+        </div>
+
+    </section>
+
+    <!-- ================= FORM ================= -->
+
+    <section class="registration">
+
+        <!-- Replace action with your FormBold Endpoint -->
+
+        <form id="bgmiForm" action="https://formbold.com/s/3ZeXq" method="POST">
+
+            <div class="card">
+
+                <h2>
+                    Squad Information
+                </h2>
+
+                <div class="input-group">
+
+                    <label>Squad Name</label>
+
+                    <input
+                        type="text"
+                        name="Squad Name"
+                        required
+                    >
+
+                </div>
+
+                <div class="grid-2">
+
+                    <div class="input-group">
+
+                        <label>Squad Leader</label>
+
+                        <input
+                            type="text"
+                            name="Leader Name"
+                            required
+                        >
+
+                    </div>
+
+                    <div class="input-group">
+
+                        <label>Leader Phone</label>
+
+                        <input
+                            type="tel"
+                            name="Leader Phone"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+                <div class="input-group">
+
+                    <label>Leader Email</label>
+
+                    <input
+                        type="email"
+                        name="Leader Email"
+                        required
+                    >
+
+                </div>
+
+               <div class="input-group">
+
+    <label>Select Game</label>
+
+    <select name="game" required>
+
+        <option value="">Select Game</option>
+
+        <option value="BGMI">BGMI</option>
+
+        <option value="Free Fire">Free Fire</option>
+
+    </select>
+
+</div>
+
+            </div>
+
+            <!-- ================= PLAYERS ================= -->
+
+            <div class="card">
+
+                <h2>
+                    Squad Members
+                </h2>
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+
+                            <th>Player</th>
+
+                            <th>Name</th>
+
+                            <th>Class</th>
+
+                            <th>Unique ID</th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <!-- PLAYER 1 -->
+
+                        <tr>
+
+                            <td>Player 1</td>
+
+                            <td>
+                                <input class="input" type="text" name="Player 1 Name" placeholder="Name" required>
+                            </td>
+
+                            <td>
+                                <input class="input"
+                                    type="text"
+                                    name="Player 1 Class" placeholder="Class"
+                                    required
+                                >
+                            </td>
+
+                            <td>
+                                <input class="input"
+                                    type="text"
+                                    name="Unique ID" placeholder="Unique ID"
+                                    required
+                                >
+                            </td>
+
+                        </tr>
+
+                        <!-- PLAYER 2 -->
+
+                        <tr>
+
+                            <td>Player 2</td>
+
+                            <td>
+                                <input class="input" type="text" name="Player 2 Name" placeholder="Name" required>
+                            </td>
+
+                            <td>
+                                <input class="input" type="text" name="Player 2 Class" placeholder="Class" required>
+                            </td>
+
+                          <td>
+                                <input class="input"
+                                    type="text"
+                                    name="Unique ID" placeholder="Unique ID"
+                                    required
+                                >
+                            </td>
+
+                        </tr>
+
+                        <!-- PLAYER 3 -->
+
+                        <tr>
+
+                            <td>Player 3</td>
+
+                            <td>
+                                <input class="input" type="text" name="Player 3 Name" placeholder="Name" required>
+                            </td>
+
+                            <td>
+                                <input class="input" type="text" name="Player 3 Class" placeholder="Class" required>
+                            </td>
+
+                            <td>
+                                <input class="input"
+                                    type="text"
+                                    name="Unique ID" placeholder="Unique ID"
+                                    required
+                                >
+                            </td>
+
+                        </tr>
+
+                        <!-- PLAYER 4 -->
+
+                        <tr>
+
+                            <td>Player 4</td>
+
+                            <td>
+                                <input class="input" type="text" name="Player 4 Name" placeholder="Name" required>
+                            </td>
+
+                            <td>
+                                <input class="input" type="text" name="Player 4 Class" placeholder="Class" required>
+                            </td>
+
+                            <td>
+                                <input class="input"
+                                    type="text"
+                                    name="Unique ID" placeholder="Unique ID"
+                                    required
+                                >
+                            </td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+            <!-- ================= PAYMENT ================= -->
+
+            <div class="card">
+
+                <h2>
+                    Payment Details
+                </h2>
+
+                <div class="payment-box">
+
+                    <img
+                        src="assets/images/bgmi.png"
+                        alt="UPI QR Code"
+                        class="qr-image"
+                    >
+
+                    <a
+                        href="assets/images/bgmi.png"
+                        download
+                        class="download-btn"
+                    >
+                        Download QR
+                    </a>
+
+                    <div class="upi-box">
+
+                        <label>UPI ID</label>
+
+                        <div class="upi-copy">
+
+                            <input
+                                type="text"
+                                id="upiID"
+                                value="pranavkrishna4207@okicici"
+                                readonly
+                            >
+
+                            <button
+                                type="button"
+                                id="copyUPI"
+                            >
+                                Copy
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="input-group">
+
+                    <label>
+                        UTR / Transaction ID
+                    </label>
+
+                    <input
+                        type="text"
+                        id="utr"
+                        name="UTR ID"
+                        placeholder="Enter your transaction ID"
+                        required
+                    >
+                </div>
+
+                <div class="checkbox">
+
+                    <input
+                        type="checkbox"
+                        id="paymentConfirm"
+                    >
+
+                    <label for="paymentConfirm">
+
+                        I confirm that I have successfully completed the payment.
+
+                    </label>
+
+                </div>
+
+            </div>
+
+            <!-- ================= SUBMIT ================= -->
+
+            <button
+                type="submit"
+                id="submitBtn"
+                disabled
+            >
+
+                Submit Registration
+
+            </button>
+
+        </form>
+
+    </section>
+
+    <!--====================================
+        UNIQUE ID POPUP
+=====================================-->
+
+<div class="popup-overlay" id="popupOverlay">
+
+    <div class="popup">
+
+        <div class="popup-icon">
+            🎓
+        </div>
+
+        <h2>Important Notice</h2>
+
+        <p>
+
+            Your <strong>College Unique ID</strong> is printed on your
+            <strong>College Identity Card</strong>.
+
+            <br><br>
+
+            Please keep your ID card with you while filling this registration form.
+
+        </p>
+
+        <button id="closePopup">
+
+            Got It
+
+        </button>
+
+    </div>
+
+</div>
+
+    <script src="js/form-utils.js"></script>
+    <script src="js/bgmi.js"></script>
+
+</body>
+
+</html>

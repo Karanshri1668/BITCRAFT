@@ -1,0 +1,342 @@
+/* ========================= */
+
+.contact-section{
+
+    position:relative;
+
+    padding:140px 8%;
+
+    overflow:hidden;
+
+}
+
+/* ========================= */
+
+.section-heading{
+
+    text-align:center;
+
+    margin-bottom:80px;
+
+}
+
+.section-heading span{
+
+    color:#BB65FF;
+
+    letter-spacing:4px;
+
+    font-size:.9rem;
+
+}
+
+.section-heading h2{
+
+    color:#fff;
+
+    font-size:4rem;
+
+    margin:15px 0;
+
+}
+
+.section-heading p{
+
+    color:#9b9b9b;
+
+    max-width:700px;
+
+    margin:auto;
+
+    line-height:1.7;
+
+}
+
+/* ========================= */
+
+.team-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:35px;
+
+    align-items:center;
+
+}
+
+/* ========================= */
+
+.member-card{
+
+    position:relative;
+
+    background:rgba(255,255,255,.05);
+
+    backdrop-filter:blur(20px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:28px;
+
+    padding:40px 30px;
+
+    text-align:center;
+
+    transition:.45s;
+
+}
+
+.member-card:hover{
+
+    transform:translateY(-12px);
+
+    border-color:#BB65FF;
+
+    box-shadow:
+
+    0 20px 60px rgba(187,101,255,.25);
+
+}
+
+/* ========================= */
+
+.profile-ring{
+
+    width:130px;
+
+    height:130px;
+
+    margin:auto;
+
+    padding:5px;
+
+    border-radius:50%;
+
+    background:
+
+    linear-gradient(
+
+    45deg,
+
+    #BB65FF,
+
+    #8258FB,
+
+    #BB65FF
+
+    );
+
+
+}
+
+.profile-ring img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+    border:5px solid #111;
+
+}
+
+/* ========================= */
+
+.member-card h3{
+
+    color:white;
+
+    margin-top:25px;
+
+}
+
+.member-card span{
+
+    display:inline-block;
+
+    margin:12px 0 20px;
+
+    color:#BB65FF;
+
+    padding:8px 18px;
+
+    border:1px solid rgba(187,101,255,.3);
+
+    border-radius:50px;
+
+}
+
+/* ========================= */
+
+.contact-info{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:10px;
+
+    color:#bdbdbd;
+
+    margin-bottom:30px;
+
+}
+
+/* ========================= */
+
+.whatsapp-btn{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:10px;
+
+    padding:15px;
+
+    text-decoration:none;
+
+    border-radius:14px;
+
+    background:#25D366;
+
+    color:white;
+
+    font-weight:600;
+
+    transition:.35s;
+
+}
+
+.whatsapp-btn:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:
+
+    0 10px 30px rgba(37,211,102,.35);
+
+}
+
+/* ========================= */
+
+.bottom-message{
+
+    text-align:center;
+
+    margin-top:50px;
+
+}
+
+.bottom-message h4{
+
+    color:white;
+
+    font-size:2rem;
+
+}
+
+.bottom-message p{
+
+    color:#9b9b9b;
+
+    margin-top:15px;
+
+}
+
+/* ========================= */
+
+.orbit{
+
+    position:absolute;
+
+    border:1px solid rgba(187,101,255,.06);
+
+    border-radius:50%;
+
+}
+
+.orbit-1{
+
+    width:650px;
+
+    height:650px;
+
+    top:-200px;
+
+    left:-150px;
+
+}
+
+.orbit-2{
+
+    width:450px;
+
+    height:450px;
+
+    right:-100px;
+
+    bottom:-150px;
+
+}
+
+.developer-credit{
+    display:inline-block;
+    position:relative;
+    overflow:hidden;
+    text-decoration:none;
+    color:#8258FB;
+}
+
+.developer-credit p{
+    margin:0;
+    padding:0;
+}
+
+.developer-credit::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+    left:-100%;
+
+    width:50%;
+    height:100%;
+
+    background:linear-gradient(
+        90deg,
+        transparent,
+        rgba(255,255,255,.8),
+        transparent
+    );
+
+    transform:skewX(-20deg);
+
+    animation:shine 2s infinite;
+
+}
+
+@keyframes shine{
+
+    0%{
+        left:-100%;
+    }
+
+    20%{
+        left:150%;
+    }
+
+    100%{
+        left:150%;
+    }
+
+}

@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Debugging Competition | BITCRAFT TechFest</title>
+
+    <link rel="stylesheet" href="css/popuo.css">
+    <link rel="stylesheet" href="css/ai-prompt.css">
+
+</head>
+
+<body>
+
+<!--================ HERO =================-->
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <span class="badge">
+            BITCRAFT TECHFEST 2026
+        </span>
+
+        <h1>
+            Debugging Competition
+        </h1>
+
+        <p>
+            Test your logical thinking and debugging skills by identifying and fixing errors in code within the given time.
+        </p>
+
+        <!-- <div class="event-info">
+
+            <div class="info-box">
+
+                <h3>Registration Fee</h3>
+
+                <p>₹100 / Participant</p>
+
+            </div>
+
+            <div class="info-box">
+
+                <h3>Mode</h3>
+
+                <p>Individual</p>
+
+            </div>
+
+            <div class="info-box">
+
+                <h3>Duration</h3>
+
+                <p>60 Minutes</p>
+
+            </div>
+
+        </div> -->
+
+    </div>
+
+</section>
+
+<!--================ REGISTRATION =================-->
+
+<section class="registration">
+
+<form
+id="debuggingForm"
+action="https://formbold.com/s/6vdQM"
+method="POST"
+>
+
+<!--================ PARTICIPANT =================-->
+
+<div class="card">
+
+<h2>Participant Details</h2>
+
+<div class="grid-2">
+
+<div class="input-group">
+
+<label>Name</label>
+
+<input
+type="text"
+name="Participant Name"
+required>
+
+</div>
+
+<div class="input-group">
+
+<label>Class</label>
+
+<input
+type="text"
+name="Participant Class"
+required>
+
+</div>
+
+<div class="input-group">
+
+<label>Contact</label>
+
+<input
+type="tel"
+name="Participant Contact"
+required>
+
+</div>
+
+<div class="input-group">
+
+<label>College Unique ID</label>
+
+<input
+type="text"
+name="Participant Unique ID"
+required>
+
+</div>
+
+</div>
+
+</div>
+
+<!--================ PAYMENT =================-->
+
+<div class="card">
+
+<h2>Payment Details</h2>
+
+<div class="payment-box">
+
+<img
+src="assets/images/ai-prompt-payment.jpeg"
+alt="UPI QR"
+class="qr-image"
+>
+
+<a
+href="assets/images/ai-prompt-payment.jpeg"
+download
+class="download-btn"
+>
+
+Download QR
+
+</a>
+
+<div class="upi-box">
+
+<label>UPI ID</label>
+
+<div class="upi-copy">
+
+<input
+type="text"
+id="upiID"
+value="pranavkrishna4207@okicici"
+readonly
+>
+
+<button
+type="button"
+id="copyUPI"
+>
+
+Copy
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="input-group">
+
+<label>UTR / Transaction ID</label>
+
+<input
+type="text"
+id="utr"
+name="UTR ID"
+placeholder="Enter Transaction ID"
+required>
+
+</div>
+
+<div class="checkbox">
+
+<input
+type="checkbox"
+id="paymentConfirm"
+required
+>
+
+<label for="paymentConfirm">
+
+I confirm that I have successfully completed the payment.
+
+</label>
+
+</div>
+
+</div>
+
+<!--================ SUBMIT =================-->
+
+<button
+type="submit"
+id="submitBtn"
+disabled
+>
+
+Register Now
+
+</button>
+
+</form>
+
+</section>
+
+<!--====================================
+        UNIQUE ID POPUP
+=====================================-->
+
+<div class="popup-overlay" id="popupOverlay">
+
+    <div class="popup">
+
+        <div class="popup-icon">
+            🎓
+        </div>
+
+        <h2>Important Notice</h2>
+
+        <p>
+
+            Your <strong>College Unique ID</strong> is printed on your
+            <strong>College Identity Card</strong>.
+
+            <br><br>
+
+            Please keep your ID card with you while filling this registration form.
+
+        </p>
+
+        <button id="closePopup">
+
+            Got It
+
+        </button>
+
+    </div>
+
+</div>
+
+<script src="js/form-utils.js"></script>
+<script src="js/debugging.js"></script>
+
+</body>
+
+</html>

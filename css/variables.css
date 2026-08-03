@@ -1,0 +1,26 @@
+:root{
+    /* Brand Colors */
+    --primary: #0E2F76;
+    --secondary: #AAC0E1;
+    --background: #F5FEFF;
+
+    /* Surface Colors */
+    --surface: #FFFFFF;
+    --surface-hover: #F8FBFF;
+
+    /* Text */
+    --heading: #0E2F76;
+    --text: #4B5D82;
+    --text-light: #7C90B6;
+
+    /* Border */
+    --border: #D7E3F4;
+
+    /* Shadows */
+    --shadow-sm: 0 8px 20px rgba(14,47,118,.08);
+    --shadow-md: 0 15px 35px rgba(14,47,118,.12);
+    --shadow-lg: 0 25px 60px rgba(14,47,118,.18);
+
+    /* Radius */
+    --radius:20px;
+}

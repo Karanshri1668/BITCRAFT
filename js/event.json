@@ -1,0 +1,320 @@
+{
+  "eventDetails": {
+    "eventName": "TECHFEST 2026",
+    "totalDays": 2,
+    "days": [
+      {
+        "day": 1,
+        "dayTitle": "Technical Day",
+        "events": [
+          {
+            "id":"ai-prompt-battle",
+            "eventNo": 1,
+            "eventName": "Prompt-To-Pixels",
+            "eventTagline": "Think. Prompt. Create. Match.",
+            "banner": "assets/images/AI-Prompt-Battle-Flyer.png",
+            "registrationlink":"ai-prompt.html",
+            "eventHeads": [
+              {
+                "name": "Pranav Krishna",
+                "contact": "+91-8446255092",
+                "email": "pranav@techfest.com"
+              },
+              {
+                "name": "Pratik Parulekar",
+                "contact": "+91-7057383587",
+                "email": "pratik@techfest.com"
+              }
+            ],
+            "eventType": "Duo Event",
+            "participantsPerTeam": 2,
+            "registrationFees": 50,
+            
+            "prizes": {
+              "1st": {
+                "prize": "Medal and Certificate",
+                "cashPrize": 1000
+              },
+              "2nd": {
+                "prize": "Medal and Certificate",
+                "cashPrize": 500
+              },
+              "3rd": {
+                "prize": "Medal and Certificate",
+                "cashPrize": 200
+              }
+            },
+            "venue": "Computer Lab, New Building",
+            "time": "10:00 AM",
+            "date": "20th August, 2026",
+            "description": "Can you turn your imagination into the perfect prompt? In the AI Prompt Battle, participants will be challenged to recreate a given reference image using only the power of AI prompting. Each participant will receive an image and must craft a detailed and effective prompt to generate an output that matches the original image as closely as possible. Test your creativity, observation skills, and prompt-engineering abilities as you compete to create the closest visual match. The participant whose AI-generated image most accurately resembles the reference image will emerge victorious!",
+            "rules": [
+              "<b>IMPORTANT</b>: Personal college email IDs will be used to login the AI Tools",
+              "Duo participation only.",
+              "Internet access will be provided by the organizers",
+              "AI Tools will be provided on the spot by the organizers",
+              "No smart phones, smart watches, etc. allowed in the lab while you are participating for the event.",
+              "No external help from, faculty, or online communities",
+              "Copying another participant's prompt or image is strictly prohibited.",
+              "<b>Tie-Breaker Rule</b>: If two participants have equal scores: The participant who used a more effective and creative prompt with fewer unnecessary attempts will be declared the winner."
+            ]
+          },
+          {
+            "id":"Debugging-Challenge",
+            "eventNo": 2,
+            "eventName": "FIX THE GLITCH ",
+            "eventTagline": "Find the Bugs. Build the Solution.",
+            "banner": "assets/images/debugging.jpeg",
+            "registrationlink":"debugging.html",
+            "eventHeads": [
+              {
+                "name": "Cassandra Paiva",
+                "contact": "+91-7391010040",
+                "email": "cassandra@techfest.com"
+              },
+              {
+                "name": "Riza Memon",
+                "contact": "+91-7219068638",
+                "email": "riza@techfest.com"
+              },
+              {
+                "name": "Shambhavi Mishra",
+                "contact": "+91-8369139932",
+                "email": "shambhavi@techfest.com"
+              }
+            ],
+            "eventType": "Solo Event",
+            "participantsPerTeam": 1,
+            "registrationFees": 50,
+            "prizes": {
+              "1st": {
+                "prize": "Cash Prize, Trophy and Certificate",
+                "cashPrize": 1000
+              },
+              "2nd": {
+                "prize": "Cash Prize, Trophy and Certificate",
+                "cashPrize": 500
+              },
+              "3rd": {
+                "prize": "Cash Prize, Trophy and Certificate",
+                "cashPrize": 200
+              }
+            },
+            "venue": "Computer Lab, New Building",
+            "time": "12:00 PM - 1:00 PM",
+            "date": "20th August, 2026",
+            "description": "The event consists of 2 rounds<br> <b>Round 1</b>: Debugging Round<br>Participants will be given a code containing errors (syntax, logical, and runtime errors). They must identify and fix all the errors within 15 minutes. The code will be displayed on the projector, and participants will solve it using Notepad. Mobile phones and internet access are strictly prohibited. Any participant who fails to complete the debugging within 15 minutes will be disqualified. Only participants who correctly complete the debugging challenge within the time limit will qualify for the next round.<br> <b>Round 2</b>: Coding Round<br>Only the participants selected from the Debugging Round will advance to this round.Participants will be given a programming problem and must write a complete solution within 30 minutes.The program must produce the correct output for the given problem. Time limit for this round is 30 minutes.The first three participants to correctly complete the program and submit it will be declared the winners (1st, 2nd, and 3rd respectively).",
+            "rules": [
+             "Maximum 20 participants will be allowed.",
+             "If registrations exceed 20, an elimination process may be conducted before the event.",
+             "Mobile phones, smartwatches, AI tools, and any unauthorized electronic devices are not allowed during the event.",
+             "Participants must follow the instructions of the volunteers and event coordinators at all times.",
+             "Any form of plagiarism, unfair means, or misconduct will result in immediate disqualification.",
+             "The decision of the event coordinators will be final and binding.",
+             "Time limit for this round - 30 minutes."
+            ]
+          },
+          {
+            "id":"Tech-quiz",
+            "eventNo": 3,
+            "eventName": "Tech Arena",
+            "eventTagline": "Think Beyond, Question Deeper, Win Together.",
+            "banner": "assets/images/tech-arena.jpeg",
+            "registrationlink":"tech-quiz.html",
+            "eventHeads": [
+              {
+                "name": "Dhruv Yerunkar",
+                "contact": "+91-8208036761",
+                "email": "dhruv@techfest.com"
+              },
+              {
+                "name": "Linette Dsa",
+                "contact": "+91-8999204623",
+                "email": "linette@techfest.com"
+              }
+            ],
+            "eventType": "Team Event",
+            "participantsPerTeam": 4,
+            "registrationFees": 100,
+            
+            "prizes": {
+              "1st": {
+                "prize": "Cash Prize, Trophy and Certificate",
+                "cashPrize": 1500
+              },
+              "2nd": {
+                "prize": "Cash Prize, Trophy and Certificate",
+                "cashPrize": 700
+              },
+              "3rd": {
+                "prize": "Cash Prize, Trophy and Certificate",
+                "cashPrize": 300
+              }
+            },
+            "venue": "Classrooms New Building",
+            "time": "10:30 AM",
+            "date": "20th August, 2026",
+            "description": "<b>Tech Arena</b>The quiz will consist of multiple rounds based on technology and general IT knowledge. Questions may include topics such as Computers, Programming, AI, Cybersecurity, Current Technology, Internet, and General Science.",
+            "rules": [
+              "Team of exactly 4 members required. Team members can be from any Department",
+              "Teams can be formed across any class or department. It is not mandatory to create a team only with students from your own class. Participants are free to team up with their friends, regardless of their class or division.",
+              "The quiz will consist of multiple rounds based on technology and general IT knowledge. Questions may include topics such as Computers, Programming, AI, Cybersecurity, Current Technology, Internet, and General Science.",
+              "No electronic devices allowed during quiz",
+              "Elimination round will be conducted prior to main event",
+              "The quizmaster's decision will be final and binding.",
+              "Any form of cheating or unfair means will result in immediate disqualification.",
+              "Teams must maintain discipline throughout the event.",
+              "Participants must answer only when permitted by the quizmaster.",
+              "Negative marking, if applicable, will be announced before the event begins.",
+              "In case of a tie, a tiebreaker round will be conducted.",
+              "Organizers reserve the right to modify the quiz format if required."
+            ]
+          }
+        ]
+      },
+      {
+        "day": 2,
+        "dayTitle": "Non-Technical Day",
+        "events": [
+          {
+            "id":"Gaming",
+            "eventNo": 4,
+            "eventName": "Gaming Tournament",
+            "eventTagline": "FragFest",
+            "banner": "assets/images/Gaming-event-flyer.png",
+            "registrationlink":"bgmi.html",
+            "eventHeads": [
+              {
+                "name": "Pratik Parulekar",
+                "contact": "+91-7057383587",
+                "email": "pratik@techfest.com"
+              },
+              {
+                "name": "Pranav Krishna",
+                "contact": "+91-84462550922",
+                "email": "pranav@techfest.com"
+              }
+            ],
+            "game": "BGMI",
+            "game2": "FreeFire",
+            "eventType": "Team Event",
+            "participantsPerTeam": 4,
+            "registrationFees": 200,
+            "prizePool": 2500,
+            "prizes": {
+              "1st": {
+                "prize": "Medal",
+                "cashPrize": 1500
+              },
+              "2nd": {
+                "prize": "Medal",
+                "cashPrize": 700
+              },
+              "3rd": {
+                "prize": "Medal",
+                "cashPrize": 300
+              }
+            },
+            "venue": "New Building",
+            "time": "10:00 AM",
+            "date": "21st August, 2026",
+            "description": "Get ready for intense battles in BGMI and Free Fire! Test your reflexes, strategy, teamwork, and gaming skills as you compete against fellow gamers to claim victory and become the ultimate FragFest champion.Drop in. Gear up. Dominate.",
+            "formatAnnouncement": "Only 20 Squads Get to Rule – Are You In?",
+            "rules": [
+              "<b>EVENT FORMAT WILL BE INSTRUCTED IN THE WHATSAPP GROUP By The Event Heads.</b>",
+              "<b>Internet/network access will not be provided by the event organizers. All participants must use their own mobile data or network pack during the event.</b>",
+              "Charging points will not be provided kindly bring your powerbanks, etc,Also bring your gaming equipment like finger sleeves, fans, etc",
+              "<b>IMP - No vulgar squad names </b>",
+              "All participants must register before the event begins.",
+              "The game mode, map, and match format will be announced by the organizers before the match.",
+              "Any form of cheating, hacking, scripting, exploiting bugs, or using unauthorized software will result in immediate disqualification.",
+              "Offensive language, abusive behavior, harassment, or unsportsmanlike conduct toward opponents, spectators, or organizers is strictly prohibited.",
+              "Players must follow the instructions of the event officials at all times ",
+              "If a technical issue occurs, participants must immediately inform the organizers. The organizers' decision regarding rematches will be final.",
+              "The organizers reserve the right to pause, restart, or cancel a match in case of technical difficulties.",
+              "Any disputes must be reported immediately after the match. The decision of the organizing committee will be final and binding.",
+              "By participating, players agree to abide by all event rules and maintain fair play throughout the competition.",
+              "All matches will be played on your own devices. (No emulators, tablets, etc. allowed it might lead to straight disqualification) ",
+              "Basic Rules of the game will be instructed in the WhatsApp group. Registration Form Details: Every players name needed on the form."
+            ]
+          },
+          {
+            "id":"Relay",
+            "eventNo": 5,
+            "eventName": "Beat The Clock",
+            "eventTagline": "Where Speed Meets Teamwork.",
+            "banner": "assets/images/relay.jpeg",
+            "registrationlink":"relay.html",
+            "eventHeads": [
+              {
+                "name": "Cassandra Paiva",
+                "contact": "+91-7391010040"
+              },
+              {
+                "name": "Riza Memon",
+                "contact": "+91-7219068638"
+              },
+              {
+                "name": "Shambhavi Mishra",
+                "contact": "+91-83691 39932"
+              }
+            ],
+            "eventType": "Team Event",
+            "participantsPerTeam": 4,
+            "registrationFees": 0,
+            "isFree": true,
+            "prizes": {
+              "1st": {
+                "prize": "‎",
+                "cashPrize": "Surprise Gift"
+              },
+              "2nd": {
+                "prize": "‎",
+                "cashPrize": "Surprise Gift"
+              },
+              "3rd": {
+                "prize": "‎",
+                "cashPrize": "Surprise Gift"
+              }
+            },
+            "venue": "Will be announced on the day of the event.",
+            "time": "10:00 AM - 1:00 PM",
+            "date": "21st August, 2026",
+            "description": "This is a team-based relay event where each team will complete a series of games. As one teammate finishes a game, the next teammate continues with the next challenge. The team that completes all the games in the least amount of time will be declared the winner. Each team must consist of 4 participants.",
+            "rules": [
+              "Only 16 teams can register. Registrations will be accepted on a first-come, first-serve basis.",
+              "The games will be revealed only on the day of the event, at the venue",
+              "All teams are requested to report 15 minutes prior. Late arrivals may lose their chance to participate.",
+              "This is a fun and friendly event. Any form of quarrelling, cheating, use of unfair means, or misconduct will lead to immediate disqualification.",
+              "Exciting prizes await the winning teams.",
+              "The decision of the organizers and event heads will be final and binding",
+              "Team members can be from the same or different streams."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "registrationInfo": {
+    "mode": "Online and On-spot",
+    "website": "https://techfest2026.com",
+    "lastDate": "March 10, 2026",
+    "contactHelpline": "+91-9876543200",
+    "email": "registration@techfest.com"
+  },
+  "generalRules": [
+    "All participants must carry their college ID cards",
+    "Reporting time is 30 minutes before the event starts",
+    "Latecomers will not be allowed to participate",
+    "The organizing committee's decision will be final in all matters",
+    "Participants must follow all safety and COVID-19 protocols if applicable",
+    "Any form of malpractice or cheating will lead to immediate disqualification"
+  ],
+  "organizers": {
+    "collegeName": "St. Xavier's College",
+    "department": "Department of Computer Science",
+    "studentCoordinator": "Rahul Sharma",
+    "facultyAdvisor": "Dr. Priya Patel",
+    "contact": "+91-9876543222"
+  }
+}

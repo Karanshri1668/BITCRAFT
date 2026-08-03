@@ -1,0 +1,59 @@
+@import url(responsive.css);
+@import url(hero.css);
+/* @import url(navbar.css); */
+@import url(events.css);
+@import url(contact.css);
+@import url(sponsors.css);
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:#000;
+    color: #fff;
+
+    overflow-x:hidden;
+
+}
+
+button{
+
+    border:none;
+
+    outline:none;
+
+    cursor:pointer;
+
+    font-family:inherit;
+
+}
+
+a{
+
+    text-decoration:none;
+
+    color:inherit;
+
+}
+
+ul{
+
+    list-style:none;
+
+}
+
+p{
+    color:#4B5D82;
+}
+
+

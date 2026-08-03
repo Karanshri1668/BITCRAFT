@@ -1,0 +1,147 @@
+.events-section{
+    padding: clamp(60px, 10vw, 140px) 6%;
+    position: relative;
+    border-bottom: 2px solid #8258FB;
+}
+
+.section-title{
+    text-align: center;
+    margin-bottom: clamp(40px, 6vw, 80px);
+}
+
+.section-title span{
+    color: #BB65FF;
+    letter-spacing: 5px;
+    font-size: clamp(0.75rem, 1.5vw, 1rem);
+}
+
+.section-title h2{
+    font-size: clamp(2.2rem, 6vw, 5rem);
+    color: white;
+    margin: 10px 0;
+    font-family: Anton;
+}
+
+.section-title p{
+    color: #999;
+    font-size: clamp(0.85rem, 1.5vw, 1rem);
+}
+
+/* FIXED: explicit columns instead of auto-fit stretching */
+.events-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px;
+}
+
+@media (max-width: 1024px){
+    .events-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 640px){
+    .events-grid{
+        grid-template-columns: 1fr;
+    }
+}
+
+.event-card{
+    position: relative;
+    padding: clamp(24px, 3vw, 35px);
+    overflow: hidden;
+    border-radius: 25px;
+    background: rgba(255,255,255,.05);
+    backdrop-filter: blur(18px);
+    border: 1px solid rgba(255,255,255,.08);
+    transition: .45s;
+    cursor: pointer;
+    animation: float 6s ease-in-out infinite;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+@keyframes float{
+    0%{ transform: translateY(0); }
+    50%{ transform: translateY(-10px); }
+    100%{ transform: translateY(0); }
+}
+
+.event-card:nth-child(2){ animation-delay: 1s; }
+.event-card:nth-child(3){ animation-delay: 2s; }
+.event-card:nth-child(4){ animation-delay: 3s; }
+.event-card:nth-child(5){ animation-delay: 4s; }
+
+.card-glow{
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(250px circle at var(--x) var(--y), rgba(187,101,255,.35), transparent 70%);
+    opacity: 0;
+    transition: .2s;
+}
+
+.event-card:hover{
+    transform: translateY(-15px) scale(1.03);
+    border-color: #BB65FF;
+    box-shadow: 0 0 50px rgba(187,101,255,.3);
+}
+
+.event-card:hover .card-glow{
+    opacity: 1;
+}
+
+.day-tag{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    padding: 8px 14px;
+    border-radius: 50px;
+    font-size: .75rem;
+    letter-spacing: 2px;
+}
+
+.day1{ background: #BB65FF; color: white; }
+.day2{ background: #8258FB; color: white; }
+
+.event-icon{
+    font-size: clamp(36px, 5vw, 50px);
+    margin-bottom: 25px;
+    animation: rotateIcon 7s linear infinite;
+}
+
+@keyframes rotateIcon{
+    0%{ transform: rotate(-5deg); }
+    50%{ transform: rotate(5deg); }
+    100%{ transform: rotate(-5deg); }
+}
+
+.event-card h3{
+    color: white;
+    font-size: clamp(1.4rem, 2.5vw, 2rem);
+    margin-bottom: 12px;
+}
+
+.event-card p{
+    color: #bbb;
+    line-height: 1.7;
+    font-size: clamp(0.85rem, 1.5vw, 1rem);
+}
+
+.event-card span{
+    display: block;
+    margin-top: 25px;
+    color: #BB65FF;
+    font-size: clamp(0.8rem, 1.3vw, 0.95rem);
+}
+
+.event-card a{
+    display: inline-block;
+    margin-top: 25px;
+    color: white;
+    letter-spacing: 2px;
+    transition: .35s;
+}
+
+.event-card:hover a{
+    transform: translateX(10px);
+}
