@@ -105,6 +105,7 @@
             "date": "20th August, 2026",
             "description": "The event consists of 2 rounds<br> <b>Round 1</b>: Debugging Round<br>Participants will be given a code containing errors (syntax, logical, and runtime errors). They must identify and fix all the errors within 15 minutes. The code will be displayed on the projector, and participants will solve it using Notepad. Mobile phones and internet access are strictly prohibited. Any participant who fails to complete the debugging within 15 minutes will be disqualified. Only participants who correctly complete the debugging challenge within the time limit will qualify for the next round.<br> <b>Round 2</b>: Coding Round<br>Only the participants selected from the Debugging Round will advance to this round.Participants will be given a programming problem and must write a complete solution within 30 minutes.The program must produce the correct output for the given problem. Time limit for this round is 30 minutes.The first three participants to correctly complete the program and submit it will be declared the winners (1st, 2nd, and 3rd respectively).",
             "rules": [
+              "Note: Python will be used in both the rounds",
              "Maximum 20 participants will be allowed.",
              "If registrations exceed 20, an elimination process may be conducted before the event.",
              "Mobile phones, smartwatches, AI tools, and any unauthorized electronic devices are not allowed during the event.",
