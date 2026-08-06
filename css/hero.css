@@ -94,6 +94,11 @@ nav ul li a{
     transition:.3s;
 }
 
+.insta img{
+    width: 40px;
+    height: 40px;
+}
+
 nav ul li a:hover{
     color:var(--primary);
 }
