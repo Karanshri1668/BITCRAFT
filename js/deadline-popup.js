@@ -1,143 +1,206 @@
 /* ========================================
-   BITCRAFT REGISTRATION DEADLINE POPUP
+   BITCRAFT DEADLINE POPUP
 ======================================== */
 
-const deadlinePopup =
-    document.getElementById("deadlinePopup");
+document.addEventListener("DOMContentLoaded", function () {
 
-const deadlineClose =
-    document.getElementById("deadlineClose");
+    const popup =
+        document.getElementById("deadlinePopup");
 
-const deadlineBtn =
-    document.querySelector(".deadline-btn");
+    const closeBtn =
+        document.getElementById("deadlineClose");
 
+    const exploreBtn =
+        document.getElementById("deadlineExplore");
 
-/* ========================================
-   SETTINGS
-======================================== */
-
-const registrationDeadline =
-    new Date("August 15, 2026 23:59:59");
-
-const popupStorageKey =
-    "bitcraftDeadlinePopupClosed";
+    const reminder =
+        document.getElementById("deadlineReminder");
 
 
-/* ========================================
-   CHECK DEADLINE
-======================================== */
+    /* Safety check */
 
-function checkRegistrationDeadline(){
+    if (
+        !popup ||
+        !closeBtn ||
+        !exploreBtn ||
+        !reminder
+    ) {
 
-    const now = new Date();
-
-    /*
-        Deadline has passed
-    */
-
-    if(now >= registrationDeadline){
-
-        deadlinePopup.style.display = "none";
-
-        return;
-
-    }
-
-
-    /*
-        User has already closed
-        the popup previously
-    */
-
-    const popupClosed =
-        localStorage.getItem(
-            popupStorageKey
+        console.error(
+            "BITCRAFT: Deadline popup elements not found."
         );
 
-
-    if(popupClosed === "true"){
-
-        deadlinePopup.style.display = "none";
-
         return;
 
     }
 
 
-    /*
-        Show popup
-    */
+    /* ========================================
+       SETTINGS
+    ======================================== */
 
-    deadlinePopup.style.display = "flex";
-
-}
-
-
-/* ========================================
-   CLOSE POPUP
-======================================== */
-
-function closeDeadlinePopup(){
-
-    deadlinePopup.style.display = "none";
+    const deadline =
+        new Date("2026-08-15T23:59:59");
 
 
-    /*
-        Remember that the user
-        has already seen/dismissed it.
-    */
-
-    localStorage.setItem(
-        popupStorageKey,
-        "true"
-    );
-
-}
+    const storageKey =
+        "bitcraft_deadline_popup_closed";
 
 
-/* ========================================
-   CLOSE BUTTON
-======================================== */
+    /* ========================================
+       SHOW POPUP
+    ======================================== */
 
-deadlineClose.addEventListener(
-    "click",
-    closeDeadlinePopup
-);
+    function showPopup() {
 
+        popup.style.display = "flex";
 
-/* ========================================
-   EXPLORE EVENTS BUTTON
-======================================== */
-
-deadlineBtn.addEventListener(
-    "click",
-    closeDeadlinePopup
-);
+    }
 
 
-/* ========================================
-   CLICK OUTSIDE POPUP
-======================================== */
+    /* ========================================
+       HIDE POPUP
+    ======================================== */
 
-deadlinePopup.addEventListener(
-    "click",
-    (event) => {
+    function hidePopup() {
 
-        if(event.target === deadlinePopup){
+        popup.style.display = "none";
 
-            closeDeadlinePopup();
+    }
+
+
+    /* ========================================
+       CLOSE + REMEMBER
+    ======================================== */
+
+    function closePopup() {
+
+        hidePopup();
+
+        localStorage.setItem(
+            storageKey,
+            "true"
+        );
+
+        reminder.style.display = "flex";
+
+    }
+
+
+    /* ========================================
+       CHECK STATUS
+    ======================================== */
+
+    function checkDeadline() {
+
+        const now = new Date();
+
+
+        /* Deadline passed */
+
+        if (now > deadline) {
+
+            hidePopup();
+
+            reminder.style.display = "none";
+
+            return;
+
+        }
+
+
+        /* Already closed */
+
+        const alreadyClosed =
+            localStorage.getItem(storageKey);
+
+
+        if (alreadyClosed === "true") {
+
+            hidePopup();
+
+            reminder.style.display = "flex";
+
+        }
+
+        else {
+
+            showPopup();
+
+            reminder.style.display = "none";
 
         }
 
     }
-);
 
+
+    /* ========================================
+       EVENTS
+    ======================================== */
+
+    closeBtn.addEventListener(
+        "click",
+        closePopup
+    );
+
+
+    exploreBtn.addEventListener(
+        "click",
+        closePopup
+    );
+
+
+    reminder.addEventListener(
+        "click",
+        showPopup
+    );
+
+
+    /* Close by clicking outside */
+
+    popup.addEventListener(
+        "click",
+        function (event) {
+
+            if (event.target === popup) {
+
+                closePopup();
+
+            }
+
+        }
+    );
+
+
+    /* ========================================
+       START
+    ======================================== */
+
+    checkDeadline();
+
+});
 
 /* ========================================
-   INITIAL CHECK
+   HOURGLASS ATTENTION ANIMATION
 ======================================== */
 
-window.addEventListener(
-    "load",
-    checkRegistrationDeadline
-);
+const hourglass =
+    document.querySelector(
+        "#deadlineReminder span"
+    );
+
+
+setInterval(() => {
+
+    hourglass.classList.remove("rotate");
+
+    /*
+        Force browser to restart
+        the animation every time.
+    */
+
+    void hourglass.offsetWidth;
+
+    hourglass.classList.add("rotate");
+
+}, 4000);
