@@ -57,335 +57,348 @@ p{
 }
 
 /* ========================================
-   REGISTRATION DEADLINE POPUP
-========================================= */
+   DEADLINE OVERLAY
+======================================== */
 
-.deadline-overlay{
+.deadline-overlay {
 
-    position:fixed;
+    position: fixed;
 
-    inset:0;
+    inset: 0;
 
-    display:flex;
+    width: 100%;
+    height: 100%;
 
-    justify-content:center;
+    display: none;
 
-    align-items:center;
+    justify-content: center;
+    align-items: center;
 
-    padding:20px;
+    padding: 20px;
 
-    background:rgba(10,8,20,.72);
+    background: rgba(10, 8, 20, 0.75);
 
-    backdrop-filter:blur(10px);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 
-    -webkit-backdrop-filter:blur(10px);
-
-    z-index:99999;
-
-    animation:deadlineFadeIn .35s ease;
-
-}
-
-
-.deadline-popup{
-
-    position:relative;
-
-    width:min(100%,460px);
-
-    padding:42px 35px 35px;
-
-    text-align:center;
-
-    border-radius:30px;
-
-    background:rgba(25,22,35,.96);
-
-    border:1px solid rgba(187,101,255,.35);
-
-    box-shadow:
-
-        0 30px 80px rgba(0,0,0,.5),
-
-        0 0 50px rgba(130,88,251,.12);
-
-    animation:deadlinePopupIn .45s cubic-bezier(.2,.8,.2,1);
-
-}
-
-
-/* Close button */
-
-.deadline-close{
-
-    position:absolute;
-
-    top:16px;
-
-    right:18px;
-
-    width:36px;
-
-    height:36px;
-
-    border:none;
-
-    border-radius:50%;
-
-    background:rgba(255,255,255,.08);
-
-    color:#fff;
-
-    font-size:25px;
-
-    line-height:1;
-
-    cursor:pointer;
-
-    transition:.25s;
-
-}
-
-
-.deadline-close:hover{
-
-    background:rgba(187,101,255,.25);
-
-    transform:rotate(90deg);
-
-}
-
-
-/* Icon */
-
-.deadline-icon{
-
-    width:75px;
-
-    height:75px;
-
-    margin:0 auto 18px;
-
-    display:flex;
-
-    justify-content:center;
-
-    align-items:center;
-
-    border-radius:50%;
-
-    font-size:34px;
-
-    background:linear-gradient(
-        135deg,
-        #8258FB,
-        #BB65FF
-    );
-
-    box-shadow:
-
-        0 10px 30px rgba(130,88,251,.3);
-
-    animation:deadlinePulse 2s infinite;
-
-}
-
-
-/* Badge */
-
-.deadline-badge{
-
-    display:inline-block;
-
-    margin-bottom:12px;
-
-    padding:6px 14px;
-
-    border-radius:30px;
-
-    background:rgba(130,88,251,.12);
-
-    color:#BB65FF;
-
-    font-size:11px;
-
-    font-weight:700;
-
-    letter-spacing:2px;
-
-}
-
-
-/* Heading */
-
-.deadline-popup h2{
-
-    margin:0 0 12px;
-
-    color:#fff;
-
-    font-family:'Anton',sans-serif;
-
-    font-size:clamp(28px,6vw,40px);
-
-    letter-spacing:1px;
-
-}
-
-
-/* Description */
-
-.deadline-popup p{
-
-    margin:0 auto 25px;
-
-    max-width:350px;
-
-    color:#bdb9c8;
-
-    font-size:15px;
-
-    line-height:1.7;
-
-}
-
-
-/* Date box */
-
-.deadline-date{
-
-    padding:17px;
-
-    margin-bottom:25px;
-
-    border-radius:18px;
-
-    background:rgba(255,255,255,.05);
-
-    border:1px solid rgba(187,101,255,.18);
-
-}
-
-
-.deadline-date small{
-
-    display:block;
-
-    margin-bottom:5px;
-
-    color:#9993a8;
-
-    font-size:12px;
-
-    text-transform:uppercase;
-
-    letter-spacing:1.5px;
-
-}
-
-
-.deadline-date strong{
-
-    display:block;
-
-    color:#BB65FF;
-
-    font-size:24px;
-
-}
-
-
-/* Button */
-
-.deadline-btn{
-
-    display:inline-block;
-
-    padding:14px 30px;
-
-    border-radius:50px;
-
-    background:linear-gradient(
-        135deg,
-        #BB65FF,
-        #8258FB
-    );
-
-    color:#fff;
-
-    font-weight:600;
-
-    text-decoration:none;
-
-    transition:.3s;
-
-}
-
-
-.deadline-btn:hover{
-
-    transform:translateY(-3px);
-
-    box-shadow:
-
-        0 12px 28px rgba(130,88,251,.35);
+    z-index: 999999;
 
 }
 
 
 /* ========================================
-   ANIMATIONS
-========================================= */
+   POPUP
+======================================== */
 
-@keyframes deadlineFadeIn{
+.deadline-popup {
 
-    from{
-        opacity:0;
-    }
+    position: relative;
 
-    to{
-        opacity:1;
-    }
+    width: min(460px, 100%);
 
-}
+    padding: 40px 30px 30px;
 
+    text-align: center;
 
-@keyframes deadlinePopupIn{
+    border-radius: 28px;
 
-    from{
+    background: #1d1a25;
 
-        opacity:0;
+    border: 1px solid rgba(187, 101, 255, 0.35);
 
-        transform:
-            translateY(30px)
-            scale(.92);
-
-    }
-
-    to{
-
-        opacity:1;
-
-        transform:
-            translateY(0)
-            scale(1);
-
-    }
+    box-shadow:
+        0 30px 80px rgba(0, 0, 0, .6),
+        0 0 50px rgba(130, 88, 251, .15);
 
 }
 
 
-@keyframes deadlinePulse{
+/* ========================================
+   CLOSE
+======================================== */
 
-    0%,100%{
+.deadline-close {
 
-        transform:scale(1);
+    position: absolute;
+
+    top: 14px;
+    right: 16px;
+
+    width: 38px;
+    height: 38px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: rgba(255,255,255,.08);
+
+    color: white;
+
+    font-size: 25px;
+
+    cursor: pointer;
+
+}
+
+
+/* ========================================
+   ICON
+======================================== */
+
+.deadline-icon {
+
+    width: 70px;
+    height: 70px;
+
+    margin: 0 auto 18px;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+
+    font-size: 32px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #BB65FF,
+            #8258FB
+        );
+
+}
+
+
+/* ========================================
+   BADGE
+======================================== */
+
+.deadline-badge {
+
+    display: inline-block;
+
+    margin-bottom: 12px;
+
+    padding: 6px 14px;
+
+    border-radius: 50px;
+
+    background: rgba(130,88,251,.15);
+
+    color: #BB65FF;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+}
+
+
+/* ========================================
+   TITLE
+======================================== */
+
+.deadline-popup h2 {
+
+    margin: 0 0 12px;
+
+    color: white;
+
+    font-size: 34px;
+
+    font-family: 'Anton', sans-serif;
+
+}
+
+
+/* ========================================
+   DESCRIPTION
+======================================== */
+
+.deadline-popup p {
+
+    max-width: 350px;
+
+    margin: 0 auto 25px;
+
+    color: #c5c2cc;
+
+    line-height: 1.7;
+
+}
+
+
+/* ========================================
+   DATE
+======================================== */
+
+.deadline-date {
+
+    margin-bottom: 25px;
+
+    padding: 17px;
+
+    border-radius: 18px;
+
+    background: rgba(255,255,255,.05);
+
+    border: 1px solid rgba(187,101,255,.2);
+
+}
+
+
+.deadline-date small {
+
+    display: block;
+
+    margin-bottom: 5px;
+
+    color: #999;
+
+    font-size: 11px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1.5px;
+
+}
+
+
+.deadline-date strong {
+
+    color: #BB65FF;
+
+    font-size: 24px;
+
+}
+
+
+/* ========================================
+   EXPLORE BUTTON
+======================================== */
+
+.deadline-btn {
+
+    display: inline-block;
+
+    padding: 14px 30px;
+
+    border-radius: 50px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #BB65FF,
+            #8258FB
+        );
+
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: 600;
+
+}
+
+
+/* ========================================
+   DEADLINE REMINDER
+======================================== */
+
+.deadline-reminder {
+
+    position: fixed;
+
+    right: 22px;
+    bottom: 22px;
+
+    width: 52px;
+    height: 52px;
+
+    display: none;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 0;
+
+    border: 1px solid rgba(130, 88, 251, .25);
+
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, .8);
+
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+
+    cursor: pointer;
+
+    z-index: 9990;
+
+    box-shadow:
+        0 8px 25px rgba(50, 30, 100, .15);
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease;
+
+}
+
+
+/* Hourglass */
+
+.deadline-reminder span {
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 22px;
+
+}
+
+
+/* Hover */
+
+.deadline-reminder:hover {
+
+    transform: scale(1.08);
+
+    box-shadow:
+        0 12px 30px rgba(130, 88, 251, .3);
+
+}
+
+
+/* ========================================
+   ROTATION
+======================================== */
+
+.deadline-reminder span.rotate {
+
+    animation:
+        hourglassRotate .8s ease;
+
+}
+
+
+@keyframes hourglassRotate {
+
+    0% {
+
+        transform: rotate(0deg);
 
     }
 
-    50%{
+    100% {
 
-        transform:scale(1.06);
+        transform: rotate(360deg);
 
     }
 
@@ -394,37 +407,63 @@ p{
 
 /* ========================================
    MOBILE
-========================================= */
+======================================== */
 
-@media(max-width:480px){
+@media(max-width:600px) {
 
-    .deadline-popup{
+    .deadline-reminder {
 
-        padding:38px 22px 25px;
+        right: 15px;
 
-        border-radius:24px;
+        bottom: 15px;
 
-    }
+        width: 46px;
 
-    .deadline-icon{
-
-        width:65px;
-
-        height:65px;
-
-        font-size:28px;
+        height: 46px;
 
     }
 
-    .deadline-popup h2{
+    .deadline-reminder span {
 
-        font-size:28px;
+        font-size: 19px;
 
     }
 
-    .deadline-date strong{
+}
 
-        font-size:21px;
+/* ========================================
+   MOBILE
+======================================== */
+
+@media(max-width:600px) {
+
+    .deadline-popup {
+
+        padding: 35px 20px 25px;
+
+    }
+
+    .deadline-popup h2 {
+
+        font-size: 28px;
+
+    }
+
+    .deadline-date strong {
+
+        font-size: 21px;
+
+    }
+
+    .deadline-reminder {
+
+        right: 15px;
+
+        bottom: 15px;
+
+        padding: 11px 15px;
+
+        font-size: 12px;
 
     }
 
