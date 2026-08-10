@@ -665,17 +665,18 @@
 </section>
 
 <!-- ========================================
-        REGISTRATION DEADLINE POPUP
+     REGISTRATION DEADLINE POPUP
 ========================================= -->
+<!-- DEADLINE POPUP -->
 
-<div class="deadline-overlay" id="deadlinePopup">
+<div id="deadlinePopup" class="deadline-overlay">
 
     <div class="deadline-popup">
 
         <button
-            class="deadline-close"
+            type="button"
             id="deadlineClose"
-            aria-label="Close"
+            class="deadline-close"
         >
             &times;
         </button>
@@ -688,9 +689,7 @@
             BITCRAFT 2026
         </span>
 
-        <h2>
-            Registration Deadline
-        </h2>
+        <h2>Registration Deadline</h2>
 
         <p>
             Don't miss your chance to participate
@@ -705,13 +704,29 @@
 
         </div>
 
-        <a href="#events" class="deadline-btn">
+        <a
+            href="#events"
+            id="deadlineExplore"
+            class="deadline-btn"
+        >
             Explore Events
         </a>
 
     </div>
 
 </div>
+
+
+<!-- DEADLINE REMINDER -->
+
+<button
+    type="button"
+    id="deadlineReminder"
+    class="deadline-reminder"
+    aria-label="View registration deadline"
+>
+    <span>⏳</span>
+</button>
 
     <script src="js/deadline-popup.js"></script>
     <script src="js/animation.js"></script>
