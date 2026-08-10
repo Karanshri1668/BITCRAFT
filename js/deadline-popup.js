@@ -1,6 +1,6 @@
 /* ========================================
    BITCRAFT REGISTRATION DEADLINE POPUP
-========================================= */
+======================================== */
 
 const deadlinePopup =
     document.getElementById("deadlinePopup");
@@ -12,29 +12,27 @@ const deadlineBtn =
     document.querySelector(".deadline-btn");
 
 
-/*
-    Registration deadline:
-
-    15 August 2026
-
-    Change the time here if required.
-*/
+/* ========================================
+   SETTINGS
+======================================== */
 
 const registrationDeadline =
     new Date("August 15, 2026 23:59:59");
 
+const popupStorageKey =
+    "bitcraftDeadlinePopupClosed";
+
 
 /* ========================================
    CHECK DEADLINE
-========================================= */
+======================================== */
 
 function checkRegistrationDeadline(){
 
     const now = new Date();
 
     /*
-        If deadline has passed,
-        don't show the popup.
+        Deadline has passed
     */
 
     if(now >= registrationDeadline){
@@ -46,7 +44,29 @@ function checkRegistrationDeadline(){
     }
 
 
-    /* Show popup */
+    /*
+        User has already closed
+        the popup previously
+    */
+
+    const popupClosed =
+        localStorage.getItem(
+            popupStorageKey
+        );
+
+
+    if(popupClosed === "true"){
+
+        deadlinePopup.style.display = "none";
+
+        return;
+
+    }
+
+
+    /*
+        Show popup
+    */
 
     deadlinePopup.style.display = "flex";
 
@@ -55,47 +75,69 @@ function checkRegistrationDeadline(){
 
 /* ========================================
    CLOSE POPUP
-========================================= */
+======================================== */
 
-deadlineClose.addEventListener("click",()=>{
-
-    deadlinePopup.style.display = "none";
-
-});
-
-
-/* ========================================
-   EXPLORE EVENTS
-========================================= */
-
-deadlineBtn.addEventListener("click",()=>{
+function closeDeadlinePopup(){
 
     deadlinePopup.style.display = "none";
 
-});
+
+    /*
+        Remember that the user
+        has already seen/dismissed it.
+    */
+
+    localStorage.setItem(
+        popupStorageKey,
+        "true"
+    );
+
+}
 
 
 /* ========================================
-   CLOSE WHEN CLICKING OUTSIDE
-========================================= */
+   CLOSE BUTTON
+======================================== */
 
-deadlinePopup.addEventListener("click",(event)=>{
+deadlineClose.addEventListener(
+    "click",
+    closeDeadlinePopup
+);
 
-    if(event.target === deadlinePopup){
 
-        deadlinePopup.style.display = "none";
+/* ========================================
+   EXPLORE EVENTS BUTTON
+======================================== */
+
+deadlineBtn.addEventListener(
+    "click",
+    closeDeadlinePopup
+);
+
+
+/* ========================================
+   CLICK OUTSIDE POPUP
+======================================== */
+
+deadlinePopup.addEventListener(
+    "click",
+    (event) => {
+
+        if(event.target === deadlinePopup){
+
+            closeDeadlinePopup();
+
+        }
 
     }
-
-});
+);
 
 
 /* ========================================
    INITIAL CHECK
-========================================= */
+======================================== */
 
-window.addEventListener("load",()=>{
-
-    checkRegistrationDeadline();
-
-});
+window.addEventListener(
+    "load",
+    checkRegistrationDeadline
+);
