@@ -249,7 +249,7 @@
             "eventName": "Beat The Clock",
             "eventTagline": "Where Speed Meets Teamwork.",
             "banner": "assets/images/relay.jpeg",
-            "registrationlink":"relay.html",
+            "registrationlink":"beat-the-clock-closed.html",
             "eventHeads": [
               {
                 "name": "Cassandra Paiva",
