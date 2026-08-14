@@ -49,6 +49,7 @@
             "date": "20th August, 2026",
             "description": "Can you turn your imagination into the perfect prompt? In the AI Prompt Battle, participants will be challenged to recreate a given reference image using only the power of AI prompting. Each participant will receive an image and must craft a detailed and effective prompt to generate an output that matches the original image as closely as possible. Test your creativity, observation skills, and prompt-engineering abilities as you compete to create the closest visual match. The participant whose AI-generated image most accurately resembles the reference image will emerge victorious!",
             "rules": [
+              "<b>24 Teams Only</b>",
               "<b>IMPORTANT</b>: Personal college email IDs will be used to login the AI Tools",
               "Duo participation only.",
               "Internet access will be provided by the organizers",
@@ -105,6 +106,7 @@
             "date": "20th August, 2026",
             "description": "The event consists of 2 rounds<br> <b>Round 1</b>: Debugging Round<br>Participants will be given a code containing errors (syntax, logical, and runtime errors). They must identify and fix all the errors within 15 minutes. The code will be displayed on the projector, and participants will solve it using Notepad. Mobile phones and internet access are strictly prohibited. Any participant who fails to complete the debugging within 15 minutes will be disqualified. Only participants who correctly complete the debugging challenge within the time limit will qualify for the next round.<br> <b>Round 2</b>: Coding Round<br>Only the participants selected from the Debugging Round will advance to this round.Participants will be given a programming problem and must write a complete solution within 30 minutes.The program must produce the correct output for the given problem. Time limit for this round is 30 minutes.The first three participants to correctly complete the program and submit it will be declared the winners (1st, 2nd, and 3rd respectively).",
             "rules": [
+              "<b>20 Teams Only</b>",
               "Note: Python will be used in both the rounds",
              "Maximum 20 participants will be allowed.",
              "If registrations exceed 20, an elimination process may be conducted before the event.",
@@ -157,6 +159,7 @@
             "date": "20th August, 2026",
             "description": "<b>Tech Arena</b>The quiz will consist of multiple rounds based on technology and general IT knowledge. Questions may include topics such as Computers, Programming, AI, Cybersecurity, Current Technology, Internet, and General Science.",
             "rules": [
+              "<b>24 Teams Only</b>",
               "Team of exactly 4 members required. Team members can be from any Department",
               "Teams can be formed across any class or department. It is not mandatory to create a team only with students from your own class. Participants are free to team up with their friends, regardless of their class or division.",
               "The quiz will consist of multiple rounds based on technology and general IT knowledge. Questions may include topics such as Computers, Programming, AI, Cybersecurity, Current Technology, Internet, and General Science.",
@@ -222,6 +225,7 @@
             "description": "Get ready for intense battles in BGMI and Free Fire! Test your reflexes, strategy, teamwork, and gaming skills as you compete against fellow gamers to claim victory and become the ultimate FragFest champion.Drop in. Gear up. Dominate.",
             "formatAnnouncement": "Only 20 Squads Get to Rule – Are You In?",
             "rules": [
+              "<b>18 Teams for FREEFIRE and 16 Temas for BGMI Only</b>",
               "<b>EVENT FORMAT WILL BE INSTRUCTED IN THE WHATSAPP GROUP By The Event Heads.</b>",
               "<b>Internet/network access will not be provided by the event organizers. All participants must use their own mobile data or network pack during the event.</b>",
               "Charging points will not be provided kindly bring your powerbanks, etc,Also bring your gaming equipment like finger sleeves, fans, etc",
