@@ -66,7 +66,7 @@
             "eventName": "FIX THE GLITCH ",
             "eventTagline": "Find the Bugs. Build the Solution.",
             "banner": "assets/images/debugging.jpeg",
-            "registrationlink":"debugging.html",
+            "registrationlink":"beat-the-clock-closed.html",
             "eventHeads": [
               {
                 "name": "Cassandra Paiva",
@@ -123,7 +123,7 @@
             "eventName": "Tech Arena",
             "eventTagline": "Think Beyond, Question Deeper, Win Together.",
             "banner": "assets/images/tech-arena.jpeg",
-            "registrationlink":"tech-quiz.html",
+            "registrationlink":"beat-the-clock-closed.html",
             "eventHeads": [
               {
                 "name": "Dhruv Yerunkar",
@@ -186,7 +186,7 @@
             "eventName": "Gaming Tournament",
             "eventTagline": "FragFest",
             "banner": "assets/images/Gaming-event-flyer.png",
-            "registrationlink":"bgmi.html",
+            "registrationlink":"beat-the-clock-closed.html",
             "eventHeads": [
               {
                 "name": "Pratik Parulekar",
