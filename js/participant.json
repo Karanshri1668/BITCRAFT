@@ -1,0 +1,821 @@
+{
+    "techfest": {
+        "name": "BITCRAFT TechFest 2026",
+        "registrationStatus": "closed",
+        "currentStage": "elimination"
+    },
+
+    "events": {
+
+        "ai-prompt": {
+
+            "name": "AI Prompt Battle",
+
+            "type": "team",
+
+            "registeredCount": 25,
+
+            "teamSize": 2,
+
+            "displayMembers": true,
+
+            "teams": [
+    {
+      "id": "ai-001",
+      "teamName": "",
+      "members": [
+        "Mrunal Holikar",
+        "Shankar Allikatti"
+      ],
+      "status": "registered"
+    },
+    {
+      "id": "ai-002",
+      "teamName": "",
+      "members": [
+        "Ayeshabee Barmare",
+        "Pratiksha chaudhari"
+      ],
+      "status": "registered"
+    },
+    {
+      "id": "ai-003",
+      "teamName": "",
+      "members": [
+        "Prince Anand Gracias",
+        "NADAR AUSTIN RAJ"
+      ],
+      "status": "registered"
+    },
+    {
+      "id": "ai-004",
+      "teamName": "",
+      "members": [
+        "Mohit kumbhar",
+        "Atharva Bhor"
+      ],
+      "status": "registered"
+    },
+    {
+      "id": "ai-005",
+      "teamName": "",
+      "members": [
+        "TOUSIF NADAF",
+        "Razan sayyed"
+      ],
+      "status": "registered"
+    },
+    {
+      "id": "ai-006",
+      "teamName": "",
+      "members": [
+        "Nandinee Manojkumar Rajbhar",
+        "Ginelle Randolph Nunes"
+      ],
+      "status": "registered"
+    },
+    {
+      "id": "ai-007",
+      "teamName": "",
+      "members": [
+        "Anas Sathi",
+        "Brijesh chauhan"
+      ],
+      "status": "registered"
+    },
+    {
+      "id": "ai-008",
+      "teamName": "",
+      "members": [
+        "Mikkel Rodrigues",
+        "Reesh Dcunha"
+      ],
+      "status": "registered"
+    },
+    {
+      "id": "ai-009",
+      "teamName": "",
+      "members": [
+        "Mehmuda Sayyed",
+        "Hajra Shaikh"
+      ],
+      "status": "registered"
+    },
+    {
+      "id": "ai-010",
+      "teamName": "",
+      "members": [
+        "Joshua Keagan Kevin Waring",
+        "Roger Moses Rodrigues"
+      ],
+      "status": "registered"
+    },
+    {
+      "id": "ai-011",
+      "teamName": "",
+      "members": [
+        "Swati Singh",
+        "Roshni Pandey"
+      ],
+      "status": "registered"
+    },
+    {
+      "id": "ai-012",
+      "teamName": "",
+      "members": [
+        "Shravani sachin sankpal",
+        "Vighnesh ramratan jaiswar"
+      ],
+      "status": "registered"
+    },
+    {
+      "id": "ai-013",
+      "teamName": "",
+      "members": [
+        "SAN COLACO",
+        "MARK"
+      ],
+      "status": "registered"
+    },
+    {
+      "id": "ai-014",
+      "teamName": "",
+      "members": [
+        "Shezad Rayeen",
+        "Sahil Mehta"
+      ],
+      "status": "registered"
+    },
+    {
+      "id": "ai-015",
+      "teamName": "",
+      "members": [
+        "Anshika maurya",
+        "Clarisa Dongarkar"
+      ],
+      "status": "registered"
+    },
+    {
+      "id": "ai-016",
+      "teamName": "",
+      "members": [
+        "Alvina Sayed",
+        "Tabassum Shah"
+      ],
+      "status": "registered"
+    },
+    {
+      "id": "ai-017",
+      "teamName": "",
+      "members": [
+        "Riya Gautam",
+        "Saniya Chalke"
+      ],
+      "status": "registered"
+    },
+    {
+      "id": "ai-018",
+      "teamName": "",
+      "members": [
+        "Ali Amreena Mohd kadir",
+        "Aarti Mahinder Pal"
+      ],
+      "status": "registered"
+    },
+    {
+      "id": "ai-019",
+      "teamName": "",
+      "members": [
+        "Vajeeha khan",
+        "Hiral patel"
+      ],
+      "status": "registered"
+    },
+    {
+      "id": "ai-020",
+      "teamName": "",
+      "members": [
+        "Neha Devkate",
+        "Siann simieon"
+      ],
+      "status": "registered"
+    },
+    {
+      "id": "ai-021",
+      "teamName": "",
+      "members": [
+        "Marimuthu Murugan Nadar",
+        "Aayush Mangesh Bane"
+      ],
+      "status": "registered"
+    },
+    {
+      "id": "ai-022",
+      "teamName": "",
+      "members": [
+        "Arya Parab",
+        "Dheer Bajwa"
+      ],
+      "status": "registered"
+    },
+    {
+      "id": "ai-023",
+      "teamName": "",
+      "members": [
+        "Yash Thakur",
+        "Joel Fernandes"
+      ],
+      "status": "registered"
+    },
+    {
+      "id": "ai-024",
+      "teamName": "",
+      "members": [
+        "Aditya Chauhan",
+        "Shaun Dsouza"
+      ],
+      "status": "registered"
+    },
+    {
+      "id": "ai-025",
+      "teamName": "",
+      "members": [
+        "Adria Machado",
+        "Tirzah Thomas"
+      ],
+      "status": "registered"
+    }
+  ]
+
+        },
+
+
+        "debugging": {
+
+            "name": "Debugging",
+
+            "type": "individual",
+
+            "registeredCount": 16,
+
+            "teamSize": 1,
+
+            "displayMembers": true,
+
+             "participants": [
+    {
+      "id": "debug-001",
+      "name": "Aarti Mahinder Pal",
+      "status": "registered"
+    },
+    {
+      "id": "debug-002",
+      "name": "Singh Pranjali Virendra",
+      "status": "registered"
+    },
+    {
+      "id": "debug-003",
+      "name": "Mrunal Holikar",
+      "status": "registered"
+    },
+    {
+      "id": "debug-004",
+      "name": "Nestor Dsouza",
+      "status": "registered"
+    },
+    {
+      "id": "debug-005",
+      "name": "Mariammal Konar",
+      "status": "registered"
+    },
+    {
+      "id": "debug-006",
+      "name": "Pranjal Sondkar",
+      "status": "registered"
+    },
+    {
+      "id": "debug-007",
+      "name": "Shezad Rayeen",
+      "status": "registered"
+    },
+    {
+      "id": "debug-008",
+      "name": "Sahil Nimesh Mehta",
+      "status": "registered"
+    },
+    {
+      "id": "debug-009",
+      "name": "Vernice Pereira",
+      "status": "registered"
+    },
+    {
+      "id": "debug-010",
+      "name": "Afiya Mulla",
+      "status": "registered"
+    },
+    {
+      "id": "debug-011",
+      "name": "Prapti.Deepak.Dhandhukia",
+      "status": "registered"
+    },
+    {
+      "id": "debug-012",
+      "name": "Marimuthu Murugan Nadar",
+      "status": "registered"
+    },
+    {
+      "id": "debug-013",
+      "name": "Shivpal Chauhan",
+      "status": "registered"
+    },
+    {
+      "id": "debug-014",
+      "name": "Krish Mahadev Mangela",
+      "status": "registered"
+    },
+    {
+      "id": "debug-015",
+      "name": "Daksha Arvind shiva",
+      "status": "registered"
+    },
+    {
+      "id": "debug-016",
+      "name": "Aditya Chauhan",
+      "status": "registered"
+    }
+  ]
+
+        },
+
+
+        "tech-quiz": {
+
+            "name": "Tech Quiz",
+
+            "type": "team",
+
+            "registeredCount": 16,
+
+            "teamSize": 4,
+
+            "displayMembers": false,
+
+             "teams": [
+    {
+      "id": "quiz-001",
+      "teamName": "Team 1",
+      "status": "registered"
+    },
+    {
+      "id": "quiz-002",
+      "teamName": "OFFICIAL 69",
+      "status": "registered"
+    },
+    {
+      "id": "quiz-003",
+      "teamName": "CodeNova",
+      "status": "registered"
+    },
+    {
+      "id": "quiz-004",
+      "teamName": "Team Falcons",
+      "status": "registered"
+    },
+    {
+      "id": "quiz-005",
+      "teamName": "JSR",
+      "status": "registered"
+    },
+    {
+      "id": "quiz-006",
+      "teamName": "Team 2",
+      "status": "registered"
+    },
+    {
+      "id": "quiz-007",
+      "teamName": "Mind Blazers",
+      "status": "registered"
+    },
+    {
+      "id": "quiz-008",
+      "teamName": "Quiztopher Nolan",
+      "status": "registered"
+    },
+    {
+      "id": "quiz-009",
+      "teamName": "The quad squad!!",
+      "status": "registered"
+    },
+    {
+      "id": "quiz-010",
+      "teamName": "The four bytes",
+      "status": "registered"
+    },
+    {
+      "id": "quiz-011",
+      "teamName": "Low Expectations",
+      "status": "registered"
+    },
+    {
+      "id": "quiz-012",
+      "teamName": "Neha group",
+      "status": "registered"
+    },
+    {
+      "id": "quiz-013",
+      "teamName": "Zero Efforts",
+      "status": "registered"
+    },
+    {
+      "id": "quiz-014",
+      "teamName": "Team 3",
+      "status": "registered"
+    },
+    {
+      "id": "quiz-015",
+      "teamName": "Team 4",
+      "status": "registered"
+    },
+    {
+      "id": "quiz-016",
+      "teamName": "C minus",
+      "status": "registered"
+    }
+  ]
+
+        },
+
+
+        "gaming": {
+
+            "name": "Gaming",
+
+            "type": "team",
+
+            "registeredCount": 23,
+
+            "teamSize": 4,
+
+            "displayMembers": false,
+
+            "games": {
+
+                "BGMI": {
+
+                    "registeredCount": 0,
+
+  "teams": [
+    {
+      "id": "BGMI-001",
+      "teamName": "BJP"
+    },
+    {
+      "id": "BGMI-002",
+      "teamName": "ChalReNoob"
+    },
+    {
+      "id": "BGMI-003",
+      "teamName": "4RB"
+    },
+    {
+      "id": "BGMI-004",
+      "teamName": "BRUTAL x GAMING"
+    },
+    {
+      "id": "BGMI-005",
+      "teamName": "Team Toxic"
+    },
+    {
+      "id": "BGMI-006",
+      "teamName": "TGxRIVALS"
+    },
+    {
+      "id": "BGMI-007",
+      "teamName": "AL Qaida"
+    },
+    {
+      "id": "BGMI-008",
+      "teamName": "Death Dealers"
+    }
+  ]
+
+                },
+
+                "Free Fire": {
+
+                    "registeredCount": 0,
+
+                    "teams": [
+    {
+      "id": "FF-001",
+      "teamName": "UMELMAN BOYS"
+    },
+    {
+      "id": "FF-002",
+      "teamName": "Official 69"
+    },
+    {
+      "id": "FF-003",
+      "teamName": "Elite Esports"
+    },
+    {
+      "id": "FF-004",
+      "teamName": "IT warriors"
+    },
+    {
+      "id": "FF-005",
+      "teamName": "Stealer eSports"
+    },
+    {
+      "id": "FF-006",
+      "teamName": "TEAM AFK"
+    },
+    {
+      "id": "FF-007",
+      "teamName": "Z Warriors"
+    },
+    {
+      "id": "FF-008",
+      "teamName": "TEAM APEX GAMING"
+    },
+    {
+      "id": "FF-009",
+      "teamName": "TEAM 5G"
+    },
+    {
+      "id": "FF-010",
+      "teamName": "Dead Hunters"
+    },
+    {
+      "id": "FF-011",
+      "teamName": "NPC'S"
+    },
+    {
+      "id": "FF-012",
+      "teamName": "APEX"
+    },
+    {
+      "id": "FF-013",
+      "teamName": "JSR"
+    },
+    {
+      "id": "FF-014",
+      "teamName": "Ghost"
+    },
+    {
+      "id": "FF-015",
+      "teamName": "ApexGaming"
+    },
+    {
+      "id": "FF-016",
+      "teamName": "Dhamaal Gang"
+    }
+  ]
+
+                }
+
+            }
+
+        },
+
+
+        "relay": {
+
+            "name": "Relay",
+
+            "type": "team",
+
+            "registeredCount": 20,
+
+            "teamSize": 4,
+
+            "displayMembers": true,
+
+            "teams": [
+    {
+      "id": "relay-001",
+      "teamName": "Team-1",
+      "members": [
+        "Ali Amreena Mohd kadir",
+        "Shahin firdous abdul hamid shaikh",
+        "Aarti Mahinder Pal",
+        "Kajal Ramesh gupta"
+      ],
+      "status": "registered"
+    },
+    {
+      "id": "relay-002",
+      "teamName": "Team-2",
+      "members": [
+        "Neomi Nelson Pimenta",
+        "Marion Melwin Dmello",
+        "Vera Falcao",
+        "Kenisha Furtado"
+      ],
+      "status": "registered"
+    },
+    {
+      "id": "relay-003",
+      "teamName": "Team-3",
+      "members": [
+        "Sumit Maurya",
+        "Pravesh Yadav",
+        "Haseeb khan",
+        "Sahil"
+      ],
+      "status": "registered"
+    },
+    {
+      "id": "relay-004",
+      "teamName": "Team-4",
+      "members": [
+        "Vivek murlidhar",
+        "Milan behera",
+        "Om tambe",
+        "Durvesh govari"
+      ],
+      "status": "registered"
+    },
+    {
+      "id": "relay-005",
+      "teamName": "Team-5",
+      "members": [
+        "Patel Subhi Raghunath",
+        "Yadav Sejal Surendra",
+        "Kanojiya jaya Rajesh",
+        "Kini Dipti Moreshwar"
+      ],
+      "status": "registered"
+    },
+    {
+      "id": "relay-006",
+      "teamName": "Team-6",
+      "members": [
+        "Prashant Abhimanyu Mishra",
+        "Jayesh Bhimsing pawar",
+        "Abhay kumar Rajesh kumar Gupta",
+        "Adarsh vinayak sargar"
+      ],
+      "status": "registered"
+    },
+    {
+      "id": "relay-007",
+      "teamName": "Team-7",
+      "members": [
+        "Mohit kumbhar",
+        "Atharva Bhor",
+        "Amay Bhivande",
+        "Shekar allikati"
+      ],
+      "status": "registered"
+    },
+    {
+      "id": "relay-008",
+      "teamName": "Team-8",
+      "members": [
+        "Mariammal Konar",
+        "Afiya Mulla",
+        "Zahrah Patel",
+        "Asmi Mastan"
+      ],
+      "status": "registered"
+    },
+    {
+      "id": "relay-009",
+      "teamName": "Team-9",
+      "members": [
+        "Anurag Ramkrit Yadav",
+        "Aayush Mangesh Bane",
+        "Marimuthu Murugan Nadar",
+        "Jitu Lalaram Kumawat"
+      ],
+      "status": "registered"
+    },
+    {
+      "id": "relay-010",
+      "teamName": "Team-10",
+      "members": [
+        "Arya Ravindra Bhosale",
+        "Aarya Amol Chavan",
+        "Ajinkya Amarnath Gupta",
+        "Prathamesh Manojkumar Raut"
+      ],
+      "status": "registered"
+    },
+    {
+      "id": "relay-011",
+      "teamName": "Team-11",
+      "members": [
+        "Kanchan sahoo",
+        "Sanchita shetty",
+        "Pragati sharma",
+        "Mahi Meher"
+      ],
+      "status": "registered"
+    },
+    {
+      "id": "relay-012",
+      "teamName": "Team-12",
+      "members": [
+        "Swati Singh",
+        "Roshni Pandey",
+        "Hiral patel",
+        "Shivani doltade"
+      ],
+      "status": "registered"
+    },
+    {
+      "id": "relay-013",
+      "teamName": "Team-13",
+      "members": [
+        "Durgesh Rajesh Tamhankar",
+        "Joshua Keagan Kevin Waring",
+        "Roger Moses Rodrigues",
+        "CARDOZ MACEO CORNELIUS"
+      ],
+      "status": "registered"
+    },
+    {
+      "id": "relay-014",
+      "teamName": "Team-14",
+      "members": [
+        "Mehmuda Sayyed",
+        "Hajra Shaikh",
+        "Clarisa Dongarkar",
+        "Anshika Maurya"
+      ],
+      "status": "registered"
+    },
+    {
+      "id": "relay-015",
+      "teamName": "Team-15",
+      "members": [
+        "Neha Devkate",
+        "Riya Gautam",
+        "Siann simieon",
+        "Saniya Chalke"
+      ],
+      "status": "registered"
+    },
+    {
+      "id": "relay-016",
+      "teamName": "Team-16",
+      "members": [
+        "Dheer",
+        "Arya",
+        "Neel",
+        "Aman"
+      ],
+      "status": "registered"
+    },
+    {
+      "id": "relay-017",
+      "teamName": "Team-17",
+      "members": [
+        "Alvina Sayed",
+        "Swengel Mastan",
+        "Celina Itur",
+        "Tabassum Shah"
+      ],
+      "status": "registered"
+    },
+    {
+      "id": "relay-018",
+      "teamName": "Team-18",
+      "members": [
+        "Ayeshabee Barmare",
+        "Pratiksha chaudhari",
+        "Joanne warang",
+        "Vrushali Warang"
+      ],
+      "status": "registered"
+    },
+    {
+      "id": "relay-019",
+      "teamName": "Team-19",
+      "members": [
+        "Yash Thakur",
+        "Yash Thakur",
+        "Yash Thakur",
+        "Yash Thakur"
+      ],
+      "status": "registered"
+    },
+    {
+      "id": "relay-020",
+      "teamName": "Team-20",
+      "members": [
+        "Mrunali Vinayak Mhatre",
+        "Janvhi Arun Patil",
+        "Liza Nishant Benka",
+        "Iqra Firoz Patel"
+      ],
+      "status": "registered"
+    }
+  ]
+
+        }
+
+    }
+
+}
